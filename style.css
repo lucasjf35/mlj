@@ -1,0 +1,301 @@
+body {
+  background-image: url(images/fond-sable-3.png);
+  background-repeat: no-repeat;
+}
+
+* {
+  scroll-behavior: smooth !important;
+}
+
+.wrapper {
+  max-width: 80%;
+}
+
+.wrapper h2 {
+  text-align: center;
+  padding: 80px 0;
+  font-size: 2rem;
+  color: #00437c;
+}
+
+.wrapper h3 {
+  margin-top: 160px;
+  text-align: center;
+  font-size: 2rem;
+  color: #00437c;
+}
+
+.wrapper p {
+  margin: 20px;
+  color: #00437c;
+  scroll-behavior: smooth;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header h1 {
+  color: #00437c;
+  margin: auto;
+  text-align: center;
+  font-size: 50px;
+  font-family: "brad";
+  margin-bottom: 40px;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1000px;
+}
+
+.nav {
+  background-color: #00437c;
+  margin-bottom: 40px;
+  z-index: 99;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav ul li {
+  padding: 10px;
+  font-weight: 500;
+  font-family: "brad";
+}
+
+.nav ul li a {
+  color: white;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.nav ul li:hover {
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.nav ul li:hover a {
+  color: #00437c;
+}
+
+.nav ul .sub_menu_nav {
+  display: none;
+  background-color: white;
+  border-radius: 10px;
+  z-index: 98;
+}
+
+.nav ul .sub_menu_nav li:hover {
+  background-color: white;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.nav ul .sub_menu_nav li:hover a {
+  color: #00437c;
+}
+
+.nav ul li:hover .sub_menu_nav {
+  font-family: "brad";
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.pied {
+  height: 10vh;
+  display: flex;
+  background-color: white;
+  color: white;
+  align-content: center;
+}
+
+.pied p {
+  margin: auto;
+  text-align: center;
+  color: #00437c;
+}
+
+.pied a {
+  margin: auto;
+  text-align: center;
+  color: #00437c;
+  font-size: 2rem;
+}
+
+.pied .img-footer {
+  height: 8vh;
+  margin: auto;
+}
+
+.wrapper {
+  max-width: 80%;
+}
+
+.wrapper h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #00437c;
+}
+
+.wrapper h3 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2rem;
+  color: #00437c;
+}
+
+.wrapper p {
+  margin: 20px;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 80%;
+}
+
+.wrapper h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #00437c;
+}
+
+.wrapper h3 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2rem;
+  color: #00437c;
+}
+
+.wrapper p {
+  margin: 20px;
+  color: #00437c;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 80%;
+}
+
+.wrapper h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #00437c;
+}
+
+.wrapper h3 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2rem;
+  color: #00437c;
+}
+
+.wrapper p {
+  margin: 20px;
+  color: #00437c;
+  scroll-behavior: smooth;
+}
+
+.wrapper img {
+  border-radius: 10px !important;
+}
+
+.wrapper .wp-container-12 {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.wrapper .wp-container-12.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.wrapper .wp-container-5 {
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.wrapper .wp-container-5 img {
+  width: 180vh;
+  height: 40vh;
+}
+
+.wrapper .wp-container-5.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.wrapper .wp-container-11 {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.wrapper .wp-container-11.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.wrapper .wp-container-3 {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+}
+
+.wrapper .wp-container-3.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.wrapper .wp-container-14 {
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.6s ease-in-out, opacity 0.6s ease-in-out;
+  margin-bottom: 20vh;
+}
+
+.wrapper .wp-container-14.active {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+.wrapper {
+  max-width: 80%;
+}
+
+.wrapper h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #00437c;
+}
+
+.wrapper h3 {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 2rem;
+  color: #00437c;
+}
+
+.wrapper p {
+  margin: 20px;
+  color: #00437c;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "brad";
+  src: url("assets/fonts/brad.woff");
+}
+
+/*# sourceMappingURL=style.css.map */

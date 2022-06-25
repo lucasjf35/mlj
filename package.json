@@ -1,0 +1,24 @@
+{
+  "name": "mlj-sophrologie",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "clean-css-cli": "^5.6.0",
+    "node-sass": "^7.0.1",
+    "postcss-cli": "^9.1.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "build": "npm run build-sass && npm run build-autoprefix && npm run build-cleancss",
+    "build-autoprefix": "postcss --use autoprefixer --map false --output style.css style.css",
+    "build-cleancss": "cleancss -o style.min.css style.css",
+    "build-sass": "node-sass --output-style expanded --source-map true sass/styles.sass style.css",
+    "clean": "rimraf css",
+    "deploy": "npm run clean && npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
