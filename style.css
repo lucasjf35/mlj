@@ -1,6 +1,5 @@
 body {
-  background-image: url(images/fond-sable-3.png);
-  background-repeat: no-repeat;
+  background-image: url(images/sable_V3_Clair.png);
 }
 
 * {
@@ -15,19 +14,20 @@ body {
   text-align: center;
   padding: 80px 0;
   font-size: 2rem;
-  color: #00437c;
+  color: #020944;
 }
 
 .wrapper h3 {
   margin-top: 160px;
   text-align: center;
   font-size: 2rem;
-  color: #00437c;
+  color: #020944;
 }
 
 .wrapper p {
   margin: 20px;
-  color: #00437c;
+  font-size: 1.5rem;
+  color: #020944;
   scroll-behavior: smooth;
 }
 
@@ -52,7 +52,7 @@ body {
 }
 
 .nav {
-  background-color: #00437c;
+  background-color: #020944;
   margin-bottom: 40px;
   z-index: 99;
 }
@@ -84,7 +84,7 @@ body {
 }
 
 .nav ul li:hover a {
-  color: #00437c;
+  color: #020944;
 }
 
 .nav ul .sub_menu_nav {
@@ -97,11 +97,11 @@ body {
 .nav ul .sub_menu_nav li:hover {
   background-color: white;
   border-radius: 10px;
-  font-weight: 700;
+  transform: scale(1.05);
 }
 
 .nav ul .sub_menu_nav li:hover a {
-  color: #00437c;
+  color: #020944;
 }
 
 .nav ul li:hover .sub_menu_nav {
@@ -122,13 +122,13 @@ body {
 .pied p {
   margin: auto;
   text-align: center;
-  color: #00437c;
+  color: #020944;
 }
 
 .pied a {
   margin: auto;
   text-align: center;
-  color: #00437c;
+  color: #020944;
   font-size: 2rem;
 }
 
@@ -144,18 +144,19 @@ body {
 .wrapper h2 {
   text-align: center;
   font-size: 2rem;
-  color: #00437c;
+  color: #020944;
 }
 
 .wrapper h3 {
   margin-top: 60px;
   text-align: center;
   font-size: 2rem;
-  color: #00437c;
+  color: #020944;
 }
 
 .wrapper p {
   margin: 20px;
+  font-size: 1.5rem;
   scroll-behavior: smooth;
 }
 
@@ -166,19 +167,20 @@ body {
 .wrapper h2 {
   text-align: center;
   font-size: 2rem;
-  color: #00437c;
+  color: #020944;
 }
 
 .wrapper h3 {
   margin-top: 60px;
   text-align: center;
   font-size: 2rem;
-  color: #00437c;
+  color: #020944;
 }
 
 .wrapper p {
   margin: 20px;
-  color: #00437c;
+  font-size: 1.5rem;
+  color: #020944;
   scroll-behavior: smooth;
 }
 
@@ -189,19 +191,20 @@ body {
 .wrapper h2 {
   text-align: center;
   font-size: 2rem;
-  color: #00437c;
+  color: #020944;
 }
 
 .wrapper h3 {
   margin-top: 60px;
   text-align: center;
   font-size: 2rem;
-  color: #00437c;
+  color: #020944;
 }
 
 .wrapper p {
   margin: 20px;
-  color: #00437c;
+  font-size: 1.5rem;
+  color: #020944;
   scroll-behavior: smooth;
 }
 
@@ -277,20 +280,104 @@ body {
 .wrapper h2 {
   text-align: center;
   font-size: 2rem;
-  color: #00437c;
+  color: #020944;
 }
 
 .wrapper h3 {
   margin-top: 60px;
   text-align: center;
   font-size: 2rem;
-  color: #00437c;
+  color: #020944;
 }
 
 .wrapper p {
   margin: 20px;
-  color: #00437c;
-  scroll-behavior: smooth;
+  font-size: 1.5rem;
+  color: #020944;
+}
+
+.wrapper form {
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+.wrapper form h1 {
+  font-size: 2rem;
+}
+
+.wrapper form .separation {
+  width: 100%;
+  height: 1px;
+  background-color: #020944;
+}
+
+.wrapper form .corps-formulaire {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.wrapper form .corps-formulaire .groupe {
+  position: relative;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper form .corps-formulaire .gauche .groupe input {
+  margin-top: 5px;
+  padding: 10px 5px 10px 30px;
+  border: 1px solid #c9c9c9;
+  outline-color: #020944;
+  border-radius: 5px;
+  width: 50vh;
+}
+
+.wrapper form .corps-formulaire .gauche .groupe i {
+  position: absolute;
+  left: 0;
+  top: 25px;
+  padding: 14px 8px;
+  color: #020944;
+}
+
+.wrapper form .corps-formulaire .droite {
+  margin-left: 40px;
+}
+
+.wrapper form .corps-formulaire .droite .groupe {
+  height: 100%;
+}
+
+.wrapper form .corps-formulaire .droite .groupe textarea {
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border: 2px solid #020944;
+  outline: none;
+  border-radius: 5px;
+  resize: none;
+  height: 82%;
+  width: 50vh;
+}
+
+.wrapper form .pied-formulaire button {
+  margin-top: 10px;
+  background-color: #020944;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: transform 0.5s;
+}
+
+.wrapper form .pied-formulaire button:hover {
+  transform: scale(1.05);
 }
 
 @font-face {

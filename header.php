@@ -13,7 +13,7 @@
 
 <div class="header">
 
-<video class="vid-header" src = '<?php bloginfo('template_directory'); ?>/images/video-header-3.mp4' autoplay muted></video>
+<video class="vid-header" src = '<?php bloginfo('template_directory'); ?>/images/video-header-4.mp4' autoplay muted></video>
 <h1>L'art de vivre en harmonie</h1>
 
 </div>
