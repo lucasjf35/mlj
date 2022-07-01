@@ -33,7 +33,7 @@
   </div>
   
 </footer>
-
+<script src="<?php bloginfo('template_url') ?>/script.js"></script>
 </body>
 
 
