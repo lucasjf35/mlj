@@ -19,18 +19,19 @@ $secondary: rgb(0, 67, 124)
         scroll-behavior: smooth
     img
         border-radius: 10px !important
-    .wp-container-12
-        transform: translateX(-100%)
+    .wp-container-16
+        transform: translateX(100%)
         opacity: 0
         transition: transform 0.6s ease-in-out,
         opacity 0.6s ease-in-out
-    .wp-container-12.active 
+        margin-bottom: 20vh
+    .wp-container-16.active 
         transform: translateX(0%)
         opacity: 1
     .wp-container-5
         img
-            width: 180vh
-            height: 40vh
+            width: 1170px
+            height: 270px
         transform: translateX(-100%)
         opacity: 0
         transition: transform 0.6s ease-in-out,
@@ -55,11 +56,26 @@ $secondary: rgb(0, 67, 124)
         transform: translateX(0%)
         opacity: 1
     .wp-container-14
-        transform: translateX(100%)
+        transform: translateX(-100%)
         opacity: 0
         transition: transform 0.6s ease-in-out,
         opacity 0.6s ease-in-out
-        margin-bottom: 20vh
     .wp-container-14.active 
         transform: translateX(0%)
         opacity: 1
+
+@media screen and (max-width:900px)
+    .wp-block-group__inner-container
+        display: flex
+        flex-direction: column
+    .wp-block-image
+        margin: auto
+    .wp-container-5
+        display: flex
+        flex-direction: column
+        .wp-block-image
+            margin: auto
+            width: 40vw
+            height: 30vh
+            margin-bottom: 10vh
+

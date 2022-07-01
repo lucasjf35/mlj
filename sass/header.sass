@@ -4,14 +4,26 @@ $secondary: rgb(0, 67, 124)
 .header
     display: flex
     flex-direction: column
-    
     h1
         color: $secondary
         margin: auto /* Important */
         text-align: center
-        font-size: 50px
+        font-size: 3rem
         font-family: "brad"
-        margin-bottom: 40px
+    .zoom-in-zoom-out
+        margin: auto
+        font-size: 2.4rem
+        width: 70vw
+        height: 5vh
+        margin-bottom: 3vw
+        margin-top: 3vw
+        animation: zoom-in-zoom-out 5s
+    @keyframes zoom-in-zoom-out
+        0%
+            transform: scale(0.1, 0.1)
+
+        100%
+            transform: scale(1, 1)
 
 .wrapper
     margin-left: auto
@@ -22,16 +34,15 @@ $secondary: rgb(0, 67, 124)
     background-color: $primary
     margin-bottom: 40px
     z-index: 99
+    display: flex
+    justify-content: space-around
     ul
         display: flex
-        justify-content: space-between
-        max-width: 1200px
-        margin-left: auto
-        margin-right: auto
+        max-width: 100%
         li
-            padding: 10px
             font-weight: 500
             font-family: "brad"
+            padding: 10px
             a
                 color: white
                 font-size: 1.5rem
@@ -54,13 +65,68 @@ $secondary: rgb(0, 67, 124)
                 transform: scale(1.05)
                 a
                     color: $primary
-
         li:hover .sub_menu_nav
             font-family: "brad"
             display: flex
             flex-direction: column
             position: absolute
-            
-                
-            
+.sticky
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 99
+#navbar
+    overflow: hidden
+.toggle
+    display: none
+        
+@media screen and (max-width:900px)
 
+    .toggle 
+        display: block
+        font-size: 2rem
+        cursor: pointer
+        position: fixed
+        top: 10px
+        left: 10px
+        z-index: 200
+        color: $primary
+    .ouvrir
+        display: block
+    .fermer
+        display: none
+    .open .ouvrir 
+        display: none
+    .open .fermer
+        display: block
+        color: white
+    .nav-links
+        position: absolute
+        z-index: 20
+        top: 0
+        left: 0
+        width: 100%
+        height: 100vh
+        background: $primary
+        flex-direction: column
+        padding: 2rem
+        justify-content: space-around
+        transform: translateX(-100%)
+        transition: transform 1s
+        text-align: center
+        margin: auto
+    .nav-links li a
+        font-size: 2rem
+    .open .nav-links
+        transform: translateX(0)
+    .nav
+        background: none
+    .nav ul .sub_menu_nav
+        width: 100%
+        margin: auto
+
+
+
+
+          
+    

@@ -1,24 +1,48 @@
 $primary: rgb(2, 9, 68)
 $secondary: rgb(0, 67, 124)
 
-.pied
-    height: 10vh
-    display: flex
-    background-color: white
-    color: white
-    align-content: center
-    p
-        margin: auto /* Important */
-        text-align: center
-        color: $primary
-    a
-        margin: auto /* Important */
-        text-align: center
-        color: $primary
-        font-size: 2rem
-    .img-footer
-        height: 8vh
-        margin: auto /* Important */
+.footer
+  display: flex
+  flex-flow: row wrap
+  padding: 30px 30px 20px 30px
+  color: #2f2f2f
+  background-color: #fff
+  border-top: 1px solid #e5e5e5
+.footer > *
+  flex:  1 100%
+.footer__addr
+  margin-right: 1.25em
+  margin-bottom: 2em
+  h2
+    margin-top: 1.3em
+    font-size: 15px
+    font-weight: 400
+.nav__title
+  font-weight: 400
+  font-size: 15px
+.footer address
+  font-style: normal
+  color: #999
+.img-footer
+    height: 8vh
+    margin: auto /* Important */
+.nav__ul a
+  color: #999
+i
+    font-size: 2rem
+    margin-top: 1.3em
 
-
+@media screen and (min-width:901px)
+    .pied
+        display: flex
+        justify-content: space-around
+        i
+            margin: auto
+            font-size: 4rem
+        .img-footer
+            height: 15vh
+            width: 20vw
+            margin: auto /* Important */
+        h2
+            margin: auto
     

@@ -1,19 +1,23 @@
-const nav = document.querySelector('.nav');
-const navOffsetTop = nav.offsetTop;
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
 
-window.addEventListener('scroll', () => {
-    console.log("scroll !");
-    if (window.scrollY >= navOffsetTop) {
-        nav.style.position = 'fixed';
-        nav.style.top = 0;
-        nav.style.width = "100%";
-    }
-    else{
-        nav.style.position = 'static';
-    }
-});
+// Get the navbar
+var navbar = document.getElementById("navbar");
 
-const slidingNewsletter = document.querySelector('.wp-container-12');
+// Get the offset position of the navbar
+var sticky = navbar.offsetTop;
+
+// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+
+const slidingNewsletter = document.querySelector('.wp-container-16');
 
 window.addEventListener('scroll', () => {
 
@@ -96,4 +100,11 @@ window.addEventListener('scroll', () => {
     if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.7){
         slidingNewsletter5.classList.add('active')
     }
+})
+
+let toggle = document.querySelector('.toggle');
+let body = document.querySelector('body');
+
+toggle.addEventListener('click', function() {
+    body.classList.toggle('open');
 })
