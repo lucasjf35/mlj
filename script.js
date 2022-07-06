@@ -1,3 +1,11 @@
+let toggle = document.querySelector('.toggle');
+let body = document.querySelector('body');
+
+toggle.addEventListener('click', function() {
+    body.classList.toggle('open');
+})
+
+
 // When the user scrolls the page, execute myFunction
 window.onscroll = function() {myFunction()};
 
@@ -100,11 +108,4 @@ window.addEventListener('scroll', () => {
     if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.7){
         slidingNewsletter5.classList.add('active')
     }
-})
-
-let toggle = document.querySelector('.toggle');
-let body = document.querySelector('body');
-
-toggle.addEventListener('click', function() {
-    body.classList.toggle('open');
 })

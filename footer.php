@@ -14,8 +14,7 @@
       <a class="button" href="mljsophrologie@gmail.com">Envoyer un email</a>
     </address>
   </div>
-  
-  <ul class="footer__nav">
+  <!--<ul class="footer__nav">
     <li class="nav__item">
       <h2 class="nav__title">Legal</h2>
       
@@ -28,7 +27,7 @@
         </li>
       </ul>
     </li>
-  </ul>
+  </ul>-->
   <a id="linkedin" href="https://fr.linkedin.com/in/marie-laure-jeffredo" target="blank"><i class="fa-brands fa-linkedin"></i></a>
   </div>
   
