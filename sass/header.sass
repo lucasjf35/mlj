@@ -17,7 +17,7 @@ $secondary: rgb(0, 67, 124)
         width: 70vw
         height: 5vh
         margin-bottom: 3vw
-        margin-top: 3vw
+        margin-top: 1vw
         animation: zoom-in-zoom-out 20s 5s forwards
         opacity: 0
         
@@ -50,14 +50,12 @@ li
     text-decoration: none
     margin: auto
     border-radius: 10px
-    word-wrap: break-word;
 .mega-menu a:hover
     background: white
     color: rgb(2, 9, 68)
 .mega-menu-main
     display: flex
-    justify-content: center
-    gap: 30px
+    justify-content: space-around
     position: relative
     background: $primary
 .lvl-0 > a
@@ -65,7 +63,7 @@ li
     font-weight: 700
     font-size: 1.5rem
     text-transform: uppercase
-.lvl-0:hover > ul
+.lvl-0:hover > ul 
     display: flex
     font-weight: 700
     font-size: 1.5rem
@@ -83,7 +81,7 @@ li
     flex: 1
     width: 100%
     margin: 0 15px
-.lvl-1 h2 
+.lvl-1 h2
     margin: 0
     padding: 0
     color: white
@@ -98,9 +96,7 @@ li
     top: 0
     width: 100%
     z-index: 99
-
 @media screen and ( max-width:900px )
-
     .mega-menu-main
       flex-direction: column
     .mega-menu-tab
@@ -112,9 +108,9 @@ li
         font-size: 2rem
         cursor: pointer
         position: absolute
+        z-index: 20
         top: 20px
         left: 20px
-        z-index: 20
     .open .mega-menu-main
         transform: translateX(0)
     .ouvrir
@@ -133,7 +129,7 @@ li
         left: 0
         width: 100%
         height: 100vh
-        background: $primary
+        background: rgb(2, 9, 68)
         flex-direction: column
         padding: 2rem
         justify-content: space-around
@@ -141,10 +137,3 @@ li
         transition: transform 1s
         display: flex
         align-items: center
-        z-index: 99
-
-
-
-
-          
-    

@@ -14,9 +14,9 @@ get_header(); ?>
                 <?php endwhile; else: endif; ?>
 
         </div>
+        
 
-
-
+        
 
 </section>
 

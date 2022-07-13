@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <?php wp_head();?>
 </head>
@@ -14,7 +15,7 @@
 <div class="header">
 
 <video class="vid-header" src = '<?php bloginfo('template_directory'); ?>/images/video-header-5.mp4' autoplay muted></video>
-<h1 id="hideMe" class="zoom-in-zoom-out">L'art de vivre en harmonie</h1>
+<h1 class="zoom-in-zoom-out">L'art de vivre en harmonie</h1>
 
 </div>
 
@@ -25,9 +26,10 @@
             </div>
             <ul class="mega-menu-main">
               <li class="lvl-0">
-                <a href="http://mlj-sophrologie.local">me connaître</a>
+                <a href="http://mlj-sophrologie.local">bienvenue</a>
                 <ul class="mega-menu-tab">
                     <ul class="lvl-2">
+                    <li><a href="http://mlj-sophrologie.local/#sophrologie">me connaître</a></li>
                       <li><a href="http://mlj-sophrologie.local/#sophrologie">sophrologie</a></li>
                     </ul>
                   </li>

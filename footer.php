@@ -11,7 +11,6 @@
         06 26 69 59 21 <br>
         Adresse à inscrire 35000 RENNES<br>
           
-      <a class="button" href="mljsophrologie@gmail.com">Envoyer un email</a>
     </address>
   </div>
   <!--<ul class="footer__nav">
@@ -33,6 +32,7 @@
   
 </footer>
 <script src="<?php bloginfo('template_url') ?>/script.js"></script>
+
 </body>
 
 

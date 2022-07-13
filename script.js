@@ -1,3 +1,39 @@
+ScrollReveal().reveal('.wp-container-3',{
+  origin: 'right',
+  interval: '50',
+  duration: '2000',
+  distance: '150%',
+  viewFactor: '0'});
+
+ScrollReveal().reveal('.wp-container-5',{
+  origin: 'left',
+  interval: '50',
+  duration: '2000',
+  distance: '150%',
+  viewFactor: '0'});
+
+ScrollReveal().reveal('.wp-container-13',{
+  origin: 'right',
+  interval: '50',
+  duration: '2000',
+  distance: '150%',
+  viewFactor: '0'});
+
+ScrollReveal().reveal('.wp-container-14',{
+  origin: 'left',
+  interval: '50',
+  duration: '2000',
+  distance: '150%',
+  viewFactor: '0'});
+
+ScrollReveal().reveal('.wp-container-16',{
+  origin: 'right',
+  interval: '50',
+  duration: '2000',
+  distance: '150%',
+  viewFactor: '0'});
+
+
 let toggle = document.querySelector('.toggle');
 let body = document.querySelector('body');
 
@@ -25,87 +61,36 @@ function myFunction() {
 }
 
 
-const slidingNewsletter = document.querySelector('.wp-container-16');
+const sr = ScrollReveal
 
-window.addEventListener('scroll', () => {
+sr.reveal('.lorem'),
 
-    const {scrollTop, clientHeight} = document.documentElement;
+sr.reveal('.wp-container-14',{
+    origin: 'left',
+    interval: '106',
+    duration: '2000',
+    distance: '150%'});
 
-    // console.log(scrollTop, clientHeight);
+sr.reveal('.wp-container-16',{
+    origin: 'left',
+    interval: '106',
+    duration: '2000',
+    distance: '150%'});
 
-    const topElementToTopViewport = slidingNewsletter.getBoundingClientRect().top;
+sr.reveal('.wp-container-3',{
+    origin: 'left',
+    interval: '106',
+    duration: '2000',
+    distance: '150%'});
 
-    console.log(topElementToTopViewport);
+sr.reveal('.wp-container-11',{
+    origin: 'left',
+    interval: '106',
+    duration: '2000',
+    distance: '150%'});
 
-    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.5){
-        slidingNewsletter.classList.add('active')
-    }
-})
-
-const slidingNewsletter2 = document.querySelector('.wp-container-5');
-
-window.addEventListener('scroll', () => {
-
-    const {scrollTop, clientHeight} = document.documentElement;
-
-    // console.log(scrollTop, clientHeight);
-
-    const topElementToTopViewport = slidingNewsletter2.getBoundingClientRect().top;
-
-    console.log(topElementToTopViewport);
-
-    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.5){
-        slidingNewsletter2.classList.add('active')
-    }
-})
-
-const slidingNewsletter3 = document.querySelector('.wp-container-11');
-
-window.addEventListener('scroll', () => {
-
-    const {scrollTop, clientHeight} = document.documentElement;
-
-    // console.log(scrollTop, clientHeight);
-
-    const topElementToTopViewport = slidingNewsletter3.getBoundingClientRect().top;
-
-    console.log(topElementToTopViewport);
-
-    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.5){
-        slidingNewsletter3.classList.add('active')
-    }
-})
-
-const slidingNewsletter4 = document.querySelector('.wp-container-3');
-
-window.addEventListener('scroll', () => {
-
-    const {scrollTop, clientHeight} = document.documentElement;
-
-    // console.log(scrollTop, clientHeight);
-
-    const topElementToTopViewport = slidingNewsletter4.getBoundingClientRect().top;
-
-    console.log(topElementToTopViewport);
-
-    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.8){
-        slidingNewsletter4.classList.add('active')
-    }
-})
-
-const slidingNewsletter5 = document.querySelector('.wp-container-14');
-
-window.addEventListener('scroll', () => {
-
-    const {scrollTop, clientHeight} = document.documentElement;
-
-    // console.log(scrollTop, clientHeight);
-
-    const topElementToTopViewport = slidingNewsletter5.getBoundingClientRect().top;
-
-    console.log(topElementToTopViewport);
-
-    if(scrollTop > (scrollTop + topElementToTopViewport).toFixed() - clientHeight * 0.7){
-        slidingNewsletter5.classList.add('active')
-    }
-})
+sr.reveal('.wp-container-5',{
+    origin: 'left',
+    interval: '106',
+    duration: '2000',
+    distance: '150%'});
